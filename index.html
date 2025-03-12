@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/css/styles.css"/>
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+    <title>Portfolio website complete</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Isidro Rivera</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hola,<br />soy<span class="home__title-color"> Isidro Rivera</span
+            ><br />Desarrollador web
+          </h1>
+
+          <a href="#contact" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a href="https://www.linkedin.com/in/isidro-rivera-bab6971a5/" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+         
+          <a href="https://github.com/lyrics05" target="_blank" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="60"
+                href="/src/img/perfil.png"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="/src/img/about.jpg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Hola, soy Isidro Rivera</h2>
+            <p class="about__text">
+              mi nombre es isidro rivera soy Desarrollador Web Junior con una
+              sólida base en JavaScript, HTML, CSS, React.js, Node.js, y Redux.
+              Mi pasión por la tecnología me llevó a estudiar Ingeniería en
+              Tecnologías Computacionales durante un año y medio, donde adquirí
+              conocimientos clave en el desarrollo de software y la resolución
+              de problemas complejos. Aunque mi experiencia laboral no a Sido en
+              tecnologias it, estas experiencias me han enseñado el valor del
+              trabajo duro, la atención al detalle y la importancia de la
+              seguridad en cada proyecto. Ahora, estoy enfocando toda esa
+              dedicación y determinación en el mundo del desarrollo web. Estoy
+              en constante aprendizaje y me entusiasma la oportunidad de aplicar
+              y expandir mis habilidades en un entorno profesional,
+              contribuyendo a proyectos desafiantes y creciendo junto a un
+              equipo innovador. Estoy buscando una oportunidad donde pueda poner
+              en práctica mis conocimientos y seguir desarrollándome como
+              profesional.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+               Estas son algunas tecnologias que he aprendido a lo largo de mi carrera como
+               desarrollador web full stack
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-react skills__icon"></i>
+                <span class="skills__name">React js</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-redux skills__icon"></i>
+                <span class="skills__name">Redux</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-nodejs skills__icon"></i>
+                <span class="skills__name">Node js</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">Express</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">Sequelize</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">postgress sql</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">My sql workbench</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+          </div>
+
+          <div>
+            <img src="src/img/work3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+          <div>
+            <h3>Proyecto Final</h3>
+         
+          <a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+            <img src="assets/proyectosImg/proyectoFinal.png" alt="" />
+          </a>
+          <div>
+            <p>este es el proyecto final del boot-camp de henry
+              con este proyecto apredi tecnologias como React, express,sequelize,redux
+              y fue el proyecto con el que consegui mi titulo.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Proyecto Carrito con Local Storage</h3>
+       
+        <a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+          <img src="/src/proyectosImg/Carrito.png" alt="" />
+        </a>
+        <div>
+          <p>con este proyecto aprendi sobre el DOM, DOM SCRIPTING, DOM TRAVERSING,el metodo MAP,
+            el SPREAD OPERATOR
+            los OBJETOS LITERALES el LOCALSTORAGE y sus metodos GET ITEM, SET ITEM,
+             y REMOVE ITEM
+          </p>
+        </div>
+      </div>
+
+            <div>
+          <h3>Proyecto Enviar Formulario</h3>
+       
+        <a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+          <img src="/src/proyectosImg/formulario.png" alt="" />
+        </a>
+        <div>
+          <p>con este proyecto aprendi sobre el DOM, DOM SCRIPTING,y la validacion
+            de campos vacios,
+            los OBJETOS LITERALES, el evento EVENT, crear una base de datos
+            cons SEQUELIZE, crear MODELOS con DATATYPES, Y CONTROLADORES y desarrollar un
+            servidor WEB con EXPRESS, su metodo ROUTER para definir las rutas, las CORS,
+            sus metodos GET, POST PUT Y DELETE, sus metodos REQ Y RES, ademas de crear
+            una base de datos con MYSQL WORKBENCH
+            y use NODEMON para escuchar los cambios. ademas NODE JS.
+          </p>
+        </div>
+      </div>
+        <div>
+          <h3>Proyecto Buscador</h3>
+       
+        <a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+          <img src="/src/proyectosImg/Buscador.png" alt="" />
+        </a>
+        <div>
+          <p>con este proyecto aprendi sobre el DOM, DOM SCRIPTING, el metodo FILTER,
+            los FILTER ANIDADOS.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3>Proyecto TWEETS con local sorage</h3>
+     
+      <a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+        <img src="/src/proyectosImg/tweets.png" alt="" />
+      </a>
+      <div>
+        <p>esta aplicacion es la primera que usa el metodo CRUD (crear,leer,actualizar y eliminar),
+          ademas de utilizar el LOCAL STORAGE, para guardar los tweets sin perder los datos al recargar 
+          la pagina
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>Proyecto Prototyes Seguro</h3>
+   
+    <a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+      <img src="/src/proyectosImg/seguros.png" alt="" />
+    </a>
+    <div>
+      <p>con este proyecto aprendi sobre la palabra reservada THIS, las FUNCIONES CONSTRUCTORAS,
+        su CONSTUCTORES y sus PROTOTIPOS ademas de sus metodos y un poco de DOM SCRIPTING
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <h3>Proyecto Citas</h3>
+ 
+  <a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+    <img src="/src/proyectosImg/citas.png" alt="" />
+  </a>
+  <div>
+    <p>este es el segundo proyecto que usa CRUD (crear,leer.actualizar y eliminar).
+       aprendi sobre la palabra reservada THIS, crear CLASES,
+      su CONSTUCTORES y crear METODOS en sus PROTOTIPOS, validacion de formulario,y un poco de DOM SCRIPTING
+    </p>
+  </div>
+</div>
+
+<div>
+  <h3>Proyecto Index DB</h3>
+
+<a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+  <img src="/src/proyectosImg/indexdb.png" alt="" />
+</a>
+<div>
+  <p>este es el tercer proyecto que usa CRUD (crear,leer.actualizar y eliminar).
+     aprendi sobre INDEX DB y su capacidad de almacemar grandes cantidades de datos,
+     aprendi sus metodos OPEN para crear y llamar a la base de datos,las transacciones y sus metodos, ADD para crear,
+     su metodo PUT para actualizar y su metodo DELETE para eliminar. ademas de DOM SCRIPTING y validacion
+     de formuario y aprendi a usar MODULOS, e IFFES
+     (funciones autoinvocables) para proteger variables y que no se sobreescriban en otros archivos
+ 
+  </p>
+</div>
+</div>
+
+<div>
+  <h3>Proyecto Clima</h3>
+
+<a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+  <img src="/src/proyectosImg/clima.png" alt="" />
+</a>
+<div>
+  <p>este proyecto utiliza asincronia, aprendi sobre el metodo FETCH, y consumir una API,
+    aprendi las promesas encadenadas, validacion de formulario y DOM SCRIPTING
+  </p>
+</div>
+</div>
+
+<div>
+  <h3>Proyecto  Recetas</h3>
+
+<a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+  <img src="/src/proyectosImg/recetas.png" alt="" />
+</a>
+<div>
+  <p>este proyecto es el segundo que utiliza asincronia, aprendi sobre el metodo FETCH, y consumir una API,
+    y consumir END POINTS de la api
+    aprendi las promesas encadenadas, DOM SCRIPTING. ademas de una seccion para guardar una receta en favoritos
+    utilizando LOCAL STORAGE, y la capacidad de eliminar la receta de la seccion y de el local storage.ademas de
+    un poco de bootstrap y sus ventanas modales.
+  </p>
+</div>
+</div>
+
+<div>
+  <h3>Proyecto  PixaBay</h3>
+
+<a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+  <img src="/src/proyectosImg/pixabay.png" alt="" />
+</a>
+<div>
+  <p>este proyecto es el tercero que utiliza asincronia, aprendi sobre el metodo FETCH, y consumir una API,
+    aprendi las promesas encadenadas, y a usar FUNCIONES GENERADORAS y sus metodos YIELD y NEXT para poder 
+    hacer un paginado.ademas de un poco de DOM SCRIPTING.
+</div>
+</div>
+
+<div>
+  <h3>Proyecto CriptoMonedas</h3>
+
+<a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+  <img src="/src/proyectosImg/criptomoneda.png" alt="" />
+</a>
+<div>
+  <p>este proyecto es el cuarto que utiliza asincronia, aprendi las PROMESAS y sus metodos RESOLVE Y REJECT
+    aprendi sobre el metodo FETCH,consumir una API y consumir END POINTS de la api, ademas de dom scripting y
+    el metodo forEach
+   
+</div>
+</div>
+
+<div>
+  <h3>Proyecto Calculdora de Propinas</h3>
+
+<a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+  <img src="/src/proyectosImg/propinas.png" alt="" />
+</a>
+<div>
+  <p>con este proyecto aprendi la herramienta JSON-SERVER para poder "crear" una api con los metodos
+    http, usando NODE JS. aprendi el metodo FETCH y promensas encadenadas, DOM SCRIPTING, los metodos:
+    MAP,FOR EACH Y FILTER.
+   
+</div>
+</div>
+
+<div>
+  <h3>Proyecto CRUD con JSON SERVER</h3>
+
+<a href="https://pf-henryss.vercel.app/" target="_blank" class="work__img">
+  <img src="/src/proyectosImg/jsoncrm.png" alt="" />
+</a>
+<div>
+  <p>este proyecto utiliza CRUD,con este proyecto aprendi la herramienta JSON-SERVER para poder "crear" una api con los metodos
+    http, usando NODE JS. aprendi el metodo FETCH y promensas encadenadas, apredi los metodos 
+       GET PUT Y DELETE de fetch. y aprendi los metodos ASYNC, AWAIT,TRYy CATCH y aprendi a usar MODULOS, e IFFES
+       (funciones autoinvocables) para proteger variables y que no se sobreescriban en otros archivos
+   
+</div>
+</div>
+        </div><!--DIV CONTENEDOR-->
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/isidro-rivera-bab6971a5/" target="_blank" class="home__social-icon"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+           
+            <a href="https://github.com/lyrics05" target="_blank" class="home__social-icon"><i class="bx bxl-github"></i></a>
+            ></a>
+           
+            <p  class="home__social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"></path></svg>dca495@gmail.com</p>
+          </div>
+           <form action="" class="contact__form" id="contact-form">
+            <input type="text" placeholder="Name"  name="name" id="name" class="contact__input" />
+            <input type="mail"  id="email" name="email" placeholder="Email" class="contact__input" />
+            <textarea
+            id="message"
+              name="message"
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input
+              type="submit"
+              value="Enviar"
+              class="contact__button button"
+              id="enviar-formulario"
+            />
+          </form> 
+          <p id="status-message"></p>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Isidro Rivera</p>
+   
+      <p class="footer__copy">&#169; isidro Rivera👌</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./dist/bundle.js""></script>
+  </body>
+</html>
