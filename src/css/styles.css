@@ -200,6 +200,15 @@ img {
 .home__title-color {
   color: var(--first-color);
 }
+
+/* Contenedor de botones */
+.home__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: var(--mb-2);
+}
+
 .home__social {
   display: flex;
   flex-direction: column;
@@ -236,8 +245,10 @@ img {
   border-radius: 0.5rem;
   transition: 0.3s;
 }
-.button-contact{
-  display: inline-block;
+
+.button-contact {
+  display: inline-flex;
+  align-items: center;
   background-color: var(--first-color);
   color: #fff;
   padding: 0.75rem 2.5rem;
@@ -245,6 +256,25 @@ img {
   border-radius: 0.5rem;
   transition: 0.3s;
 }
+
+.button-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.button-contact:hover,
+.button-download:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
 .button:hover {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
 }
@@ -415,6 +445,9 @@ img {
   }
   .home__img {
     width: 200px;
+  }
+  .home__buttons {
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 576px) {
